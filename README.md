@@ -5,7 +5,7 @@ Projeto para simular o envio de e-mail utilizando filas para exemplificar a util
 ## <img src="https://img.icons8.com/ios-filled/20/000000/browser-window.png"/> Página
 
 <p align="center">
-  <img src="https://github.com/cicerorod/docker-email-worker-compose/blob/master/img/tela.PNG">
+  <img src="https://github.com/cicerorod/docker-email-worker-compose/blob/master/img/Tela.PNG">
 </p>
 
 ## ![](https://img.icons8.com/metro/20/000000/run-command.png) Execução

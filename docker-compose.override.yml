@@ -1,0 +1,19 @@
+version: "3"
+services:
+  db:
+    environment:
+      - DB_HOST=db
+      - POSTGRES_USER=email_sender
+      - POSTGRES_PASSWORD=email_sender
+      - POSTGRES_DB=email_sender
+
+  app:
+    environment:
+      - DB_HOST=db
+      - DB_USER=email_sender
+      - DB_PASSWORD= email_sender
+      - DB_NAME=email_sender
+      - REDIS_HOST=queue
+  worker:
+    environment:
+      - REDIS_HOST=queue

@@ -1,0 +1,16 @@
+docker-compose ps -> verifica se tem algum processo executando
+docker-compose up -> executa os comandos dentro do arquivo docker-compose.yml
+docker-compose up -d -> Executa os comandos dentro do arquivo docker-compose.yml em backgroud
+docker-compose down -> para os serviços associados
+docker-compose exec db psql -U email_sender -f /scripts/check.sql -> Executa os comandos dentro arquivo check.sql
+docker-compose logs -f -t -> logs de execução dos processos 
+docker-compose exec db psql -U email_sender -d email_sender -c 'select * from emails'
+
+--- PARA ESCALAR
+
+docker-compose up -d --sacale work=3 -> sobe 3 instalancias do processo work
+docker-compose logs -f -t work -> mostra apenas logs do serviço work
+
+
+-- Exemplo de como acessar dentro do container 
+https://medium.com/analytics-vidhya/getting-started-with-postgresql-using-docker-compose-34d6b808c47c
